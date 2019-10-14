@@ -1,1 +1,54 @@
-<p>add-course works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <form (ngSubmit)="onSubmit()">
+        <div class="row">
+          <table class="table">
+            <tr>
+              <td>
+                  <label>id</label>
+                  <input type="text" class="form-control" [(ngModel)]="item.id" name="id">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <label>Name</label>
+                  <input type="text" class="form-control" [(ngModel)]="item.name" name="name">
+              </td>
+            </tr>
+            <tr>
+              <td> <label>Description</label>
+                  <input type="text" class="form-control" [(ngModel)]="item.description" name="description">
+
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <label>Category</label>
+                  <input type="text" class="form-control" [(ngModel)]="item.category" name="category">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <label>Seq Number</label>
+                  <input type="text" class="form-control" [(ngModel)]="item.seqno" name="seqno">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <label>Is active</label>
+                  <input type="text" class="form-control" [(ngModel)]="item.isactive" name="isactive">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" value="Submit" class="btn btn-primary">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

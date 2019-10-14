@@ -1,4 +1,4 @@
-<div class="mt-2">
+<div class="mt-3 ml-3">
   <button type="button" [routerLink]="['/add-course']" class="btn btn-primary">Add course</button>
 </div>
 
@@ -19,8 +19,8 @@
     <td>{{ item.name }}</td>
     <td>{{ item.description }}</td>
     <td>{{ item.category }}</td>
-    <td>{{ item.createdate | date }}</td>
-    <td>edit</td>
+    <td>
+      <a [routerLink]="['/add-course', item.id]">edit</a></td>
   </tr>
   </tbody>
 </table>
